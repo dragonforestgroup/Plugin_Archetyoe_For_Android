@@ -10,7 +10,6 @@ import java.util.List;
 public class ShowArchetypesDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
-    private JButton buttonCancel;
     private JList archetypeList;
 
     OnChooseArchetypeListener onChooseArchetypeListener;
@@ -22,16 +21,11 @@ public class ShowArchetypesDialog extends JDialog {
 
         contentPane.setSize(400, 600);
         setLocationRelativeTo(null);
+        setTitle("please choose archetype for your project..");
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
-            }
-        });
-
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
             }
         });
 
@@ -55,7 +49,7 @@ public class ShowArchetypesDialog extends JDialog {
 
     private void onOK() {
         // add your code here
-        dispose();
+        setVisible(false);
         String selectedValue = (String) archetypeList.getSelectedValue();
         if (selectedValue == null || selectedValue.equals(""))
             return;

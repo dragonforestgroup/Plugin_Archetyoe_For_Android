@@ -6,14 +6,13 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 
 public class ChooseProjectPathDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
-    private JButton buttonCancel;
+    private JButton buttonPrevious;
     private JTextField jtf_baseDir;
     private JTextField jtf_projectName;
     private JButton jb_chooseProjectDir;
@@ -33,6 +32,7 @@ public class ChooseProjectPathDialog extends JDialog {
 
         jtf_baseDir.setEditable(false);
         setLocationRelativeTo(null);
+        setTitle("set your project path..");
         initShow();
 
         buttonOK.addActionListener(new ActionListener() {
@@ -41,9 +41,9 @@ public class ChooseProjectPathDialog extends JDialog {
             }
         });
 
-        buttonCancel.addActionListener(new ActionListener() {
+        buttonPrevious.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onCancel();
+                onPrevious();
             }
         });
 
@@ -142,6 +142,13 @@ public class ChooseProjectPathDialog extends JDialog {
     private void onCancel() {
         // add your code here if necessary
         dispose();
+    }
+
+    private void onPrevious(){
+        setVisible(false);
+        if(onFinishProjectPathListener!=null){
+            onFinishProjectPathListener.onPrevious();
+        }
     }
 
     public void setOnFinishProjectPathListener(OnFinishProjectPathListener onFinishProjectPathListener) {

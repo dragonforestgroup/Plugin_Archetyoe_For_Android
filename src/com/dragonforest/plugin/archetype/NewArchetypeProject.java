@@ -37,6 +37,11 @@ public class NewArchetypeProject extends AnAction {
      */
     AppModel appModel = null;
 
+    // 对话框
+    private ShowArchetypesDialog showArchetypesDialog;
+    private ChooseProjectPathDialog chooseProjectPathDialog;
+    private ConfigProjectDialog configProjectDialog;
+
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
         // TODO: insert action logic here
@@ -52,14 +57,19 @@ public class NewArchetypeProject extends AnAction {
      * 选择archetype
      */
     private void showChooseArchetypeDialog() {
-        ShowArchetypesDialog dialog = new ShowArchetypesDialog();
-        dialog.setOnChooseArchetypeListener(new OnChooseArchetypeListener() {
+        showArchetypesDialog = new ShowArchetypesDialog();
+        showArchetypesDialog.setOnChooseArchetypeListener(new OnChooseArchetypeListener() {
             @Override
             public void onChoose(String archetypeName) {
                 NewArchetypeProject.this.archeTypeName = archetypeName;
 
                 // 显示选择项目路径对话框
                 showChooseProjectPathDialog();
+
+            }
+
+            @Override
+            public void onPrevious() {
 
             }
         });
@@ -69,17 +79,17 @@ public class NewArchetypeProject extends AnAction {
         archtypes.add("https://github.com/dragonforestgroup/Library_DragonForestAop.git");
         archtypes.add("https://github.com/dragonforestgroup/Plugin_DragonForestPlugin.git");
         archtypes.add("https://github.com/hanlonglinandroidstudys/MaterialDesignStudy.git");
-        dialog.setListData(archtypes);
+        showArchetypesDialog.setListData(archtypes);
         //dialog.pack();
-        dialog.setSize(600, 400);
-        dialog.setVisible(true);
+        showArchetypesDialog.setSize(600, 400);
+        showArchetypesDialog.setVisible(true);
     }
 
     /**
      * 选择项目路径
      */
     private void showChooseProjectPathDialog() {
-        ChooseProjectPathDialog chooseProjectPathDialog = new ChooseProjectPathDialog(project);
+        chooseProjectPathDialog = new ChooseProjectPathDialog(project);
         chooseProjectPathDialog.setOnFinishProjectPathListener(new OnFinishProjectPathListener() {
             @Override
             public void onFinish(String chooseDir) {
@@ -89,6 +99,11 @@ public class NewArchetypeProject extends AnAction {
                 showConfigProjectDialog();
                 MessageUtil.debugMessage("", "选择最终的path：" + chooseDir, Messages.getInformationIcon());
             }
+
+            @Override
+            public void onPrevious() {
+                showArchetypesDialog.setVisible(true);
+            }
         });
         chooseProjectPathDialog.setVisible(true);
     }
@@ -97,7 +112,7 @@ public class NewArchetypeProject extends AnAction {
      * 配置app信息
      */
     private void showConfigProjectDialog() {
-        ConfigProjectDialog configProjectDialog = new ConfigProjectDialog();
+        configProjectDialog = new ConfigProjectDialog();
         configProjectDialog.setOnConfigProjectListener(new OnConfigProjectListener() {
             @Override
             public void onFinish(AppModel appModel) {
@@ -153,6 +168,11 @@ public class NewArchetypeProject extends AnAction {
                 LoadingDialog.cancel();
                 // 3.打开项目
                 MessageUtil.showMessage("创建完成", "请打开项目：" + localProjectPath, Messages.getInformationIcon());
+            }
+
+            @Override
+            public void onPrevious() {
+                chooseProjectPathDialog.setVisible(true);
             }
         });
         configProjectDialog.setVisible(true);
@@ -219,10 +239,11 @@ public class NewArchetypeProject extends AnAction {
         // 4.修改AndroidManifest.xml中的包名
         boolean isManifestModified = manifestXmlUtil.modifyManifestPacakgeName(appModel.getPackageName());
         if (!isManifestModified) {
+            MessageUtil.showMessage("错误","Manifest.xml修改出错！Manifest.xml是否存在！",Messages.getErrorIcon());
             return false;
         }
 
-        // 5.修改appName
+        // 5.修改appNamse
         String StringsXmlPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "app"
@@ -239,15 +260,17 @@ public class NewArchetypeProject extends AnAction {
         XmlUtil stringsXmlUtil = new XmlUtil(StringsXmlPath);
         boolean isAppNameModified = stringsXmlUtil.modifyStringsAppName(appModel.getAppName());
         if (!isAppNameModified) {
+            MessageUtil.showMessage("错误","appName修改失败！请检查strings.xml中app_name是否配置正常！",Messages.getErrorIcon());
             return false;
         }
 
-        // 6.修改gradle中的配置的applicationId
+        // 6.修改gradle中的配置的applicationId 认为applicatinoId和包名一致
         String gradleConfigPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "config.gradle";
-        boolean isApplicationIdModified = GradleUtil.modifiedGradleConfig(gradleConfigPath, appModel.getApplicationId());
+        boolean isApplicationIdModified = FileUtil.readAndReplace(gradleConfigPath, packageNameOld, appModel.getPackageName());
         if (!isApplicationIdModified) {
+            MessageUtil.showMessage("错误","applicationId修改出错！请检查config.gradle是否存在！",Messages.getErrorIcon());
             return false;
         }
 

@@ -10,7 +10,7 @@ import java.awt.event.*;
 public class ConfigProjectDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
-    private JButton buttonCancel;
+    private JButton buttonPrevious;
     private JTextField jtf_appName;
     private JTextField jtf_packageName;
     private JTextField jtf_applcationId;
@@ -22,8 +22,9 @@ public class ConfigProjectDialog extends JDialog {
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        setSize(600,400);
+        setSize(600, 400);
         setLocationRelativeTo(null);
+        setTitle("config your app info..");
         initShow();
 
         buttonOK.addActionListener(new ActionListener() {
@@ -32,9 +33,9 @@ public class ConfigProjectDialog extends JDialog {
             }
         });
 
-        buttonCancel.addActionListener(new ActionListener() {
+        buttonPrevious.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                onCancel();
+                onPrevious();
             }
         });
 
@@ -89,6 +90,13 @@ public class ConfigProjectDialog extends JDialog {
     private void onCancel() {
         // add your code here if necessary
         dispose();
+    }
+
+    private void onPrevious() {
+        if (onConfigProjectListener != null) {
+            setVisible(false);
+            onConfigProjectListener.onPrevious();
+        }
     }
 
     public void setOnConfigProjectListener(OnConfigProjectListener onConfigProjectListener) {
