@@ -62,6 +62,7 @@ public class FileUtil {
 
     /**
      * 替换文件中的字符串
+     * 指定文件格式为UTF-8
      *
      * @param filePath
      * @param oldText

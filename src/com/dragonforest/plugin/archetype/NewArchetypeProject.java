@@ -1,19 +1,20 @@
 package com.dragonforest.plugin.archetype;
 
-import com.dragonforest.plugin.archetype.dialog.ChooseProjectPathDialog;
-import com.dragonforest.plugin.archetype.dialog.ConfigProjectDialog;
-import com.dragonforest.plugin.archetype.dialog.LoadingDialog;
-import com.dragonforest.plugin.archetype.dialog.ShowArchetypesDialog;
+import com.dragonforest.plugin.archetype.dialog.*;
 import com.dragonforest.plugin.archetype.listener.OnChooseArchetypeListener;
 import com.dragonforest.plugin.archetype.listener.OnConfigProjectListener;
 import com.dragonforest.plugin.archetype.listener.OnFinishProjectPathListener;
 import com.dragonforest.plugin.archetype.model.AppModel;
 import com.dragonforest.plugin.archetype.utils.*;
+import com.intellij.ide.util.projectWizard.importSources.ProjectStructureDetector;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.project.ProjectLocator;
+import com.intellij.openapi.roots.ProjectRootManager;
 import com.intellij.openapi.ui.Messages;
+import com.intellij.openapi.vcs.ProjectLevelVcsManager;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -51,6 +52,9 @@ public class NewArchetypeProject extends AnAction {
         // 显示选择Archetype对话框
         showChooseArchetypeDialog();
 
+        //测试dialog
+//        TestDialog testDialog=new TestDialog(project);
+//        testDialog.show();
     }
 
     /**
@@ -84,6 +88,7 @@ public class NewArchetypeProject extends AnAction {
         //dialog.pack();
         showArchetypesDialog.setSize(600, 400);
         showArchetypesDialog.setVisible(true);
+
     }
 
     /**
@@ -125,10 +130,10 @@ public class NewArchetypeProject extends AnAction {
                 // TODO: 2019/6/12 这里加一个进度框
                 // FIXME: 2019/6/12 异步克隆的问题（线程切换）
 
-                /*
+
                 // 异步加载
                 LoadingDialog.loading("cloning from " + archeTypeName);
-                GitUtil.asynCloneToLocalPath(NewArchetypeProject.this.archeTypeName, NewArchetypeProject.this.localProjectPath, new GitUtil.OnCloneListener() {
+                GitUtil.asynCloneToLocalPath(project,NewArchetypeProject.this.archeTypeName, NewArchetypeProject.this.localProjectPath, new GitUtil.OnCloneListener() {
                     @Override
                     public void onCloneSuccess() {
                         LoadingDialog.loading("modifying...");
@@ -150,8 +155,9 @@ public class NewArchetypeProject extends AnAction {
                         MessageUtil.showMessage("错误", "克隆出错！！！" + msg, Messages.getErrorIcon());
                     }
                 });
-                */
+
                 // 同步加载
+                /*
                 LoadingDialog.loading("cloning from " + archeTypeName);
                 boolean isCloned = GitUtil.cloneToLocalPath(NewArchetypeProject.this.archeTypeName, NewArchetypeProject.this.localProjectPath);
                 if(!isCloned){
@@ -169,6 +175,9 @@ public class NewArchetypeProject extends AnAction {
                 LoadingDialog.cancel();
                 // 3.打开项目
                 MessageUtil.showMessage("创建完成", "请打开项目：" + localProjectPath, Messages.getInformationIcon());
+                ProjectStructureDetector projectStructureDetector
+
+                */
             }
 
             @Override

@@ -80,7 +80,8 @@ public class ChooseProjectPathDialog extends JDialog {
             File file = new File(workSpacePath + File.separator + projectName);
             if (file.exists()) {
                 projectName = defaultProjectName + projectIndex;
-                projectIndex++;
+                projectIndex
+                        ++;
                 continue;
             }
             break;

@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ed59bdb-17f0-441d-8f6d-38da25c302c9" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.form" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Android_Archetype_Project.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$1.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$2.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$3.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/FileUtil.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/FileUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/GitUtil$1.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/GitUtil$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/GitUtil.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/GitUtil.class" />
       <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java" />
       <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,61 +46,258 @@
       <file leaf-file-name="NewArchetypeProject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="81" column="48" lean-forward="true" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+            <state relative-caret-position="404">
+              <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3791#3792#0" expanded="true" />
-                <element signature="e#3860#3861#0" expanded="true" />
-                <element signature="e#6923#6924#0" expanded="true" />
-                <element signature="e#6995#6996#0" expanded="true" />
+                <element signature="e#2705#2713#0" expanded="true" />
+                <element signature="e#3918#3919#0" expanded="true" />
+                <element signature="e#3987#3988#0" expanded="true" />
+                <element signature="e#7127#7128#0" expanded="true" />
+                <element signature="e#7199#7200#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/MessageUtil.java">
+      <file leaf-file-name="LoadingDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChooseProjectPathDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="81" column="48" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="87" column="21" lean-forward="true" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileOutputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/FileOutputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="365" column="46" lean-forward="false" selection-start-line="365" selection-start-column="30" selection-end-line="365" selection-end-column="46" />
+            <state relative-caret-position="418">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowArchetypesDialog.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDialog.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+              <folding>
+                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DialogWrapper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/DialogWrapper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="974" column="31" lean-forward="true" selection-start-line="974" selection-start-column="31" selection-end-line="974" selection-end-column="31" />
+              <folding>
+                <element signature="method#getDoNotShowMessage#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#DialogWrapper#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#DialogWrapper#1;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#9102:9330" expanded="false" />
+                <element signature="e#10158#10786#0" expanded="true" />
+                <element signature="e#10785#10786#0" expanded="true" />
+                <element signature="docComment;method#DialogWrapper#5;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#DialogWrapper#5;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#DialogWrapper#6;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#11956:12184" expanded="false" />
+                <element signature="method#DialogWrapper#7;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#13878:14106" expanded="false" />
+                <element signature="method#getValidationThreadToUse#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#doValidateAll#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#installErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#15747#15881#0" expanded="false" />
+                <element signature="method#updateErrorInfo#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#16252#16616#0" expanded="false" />
+                <element signature="method#createDefaultActions#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#addMouseListener#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#addMouseListener#1;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#addKeyListener#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#close#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createContentPaneBorder#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#isMoveHelpButtonLeft#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#isRemoveHelpButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createSouthPanel#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createHelpButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setHelpTooltip#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#flattenOptionsActions#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getStyle#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createButtons#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createSouthPanel#1;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#24246:24560" expanded="false" />
+                <element signature="method#getBackground#0;class#24246:24560" expanded="false" />
+                <element signature="method#createDoNotAskCheckbox#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createButtonsPanel#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createJButtonForAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createJOptionsButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#31098:31431" expanded="false" />
+                <element signature="method#actionPerformed#0;class#31098:31431" expanded="false" />
+                <element signature="method#extractMnemonic#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setMargin#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createPeer#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="docComment;method#createPeer#1;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#33724#33735#0" expanded="false" />
+                <element signature="method#createPeer#1;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createPeer#2;class#DialogWrapper#0" expanded="false" />
+                <element signature="docComment;method#createPeer#3;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#34478#34489#0" expanded="false" />
+                <element signature="method#createPeer#3;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createPeer#5;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setAutoAdjustable#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#isAutoAdjustable#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#dispose#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#cleanupRootPane#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#37896#38258#0" expanded="false" />
+                <element signature="method#unregisterKeyboardActions#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#cleanupWindowListeners#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#39846#40281#0" expanded="false" />
+                <element signature="method#doCancelAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#processDoNotAskOnCancel#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#clickDefaultButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#doOKAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#processDoNotAskOnOk#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createActions#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#createLeftSideActions#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getOKAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getCancelAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getHelpAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#43065#43074#0" expanded="false" />
+                <element signature="method#getPreferredFocusedComponent#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#44667:45795" expanded="false" />
+                <element signature="method#componentResized#0;class#44667:45795" expanded="false" />
+                <element signature="class#45917:46087" expanded="false" />
+                <element signature="e#46328#46389#0" expanded="false" />
+                <element signature="method#installEnterHook#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#48148:48756" expanded="false" />
+                <element signature="method#actionPerformed#0;class#48148:48756" expanded="false" />
+                <element signature="method#update#0;class#48148:48756" expanded="false" />
+                <element signature="method#expandNextOptionButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#startTrackingValidation#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#49558#49743#0" expanded="false" />
+                <element signature="method#initValidation#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#49884#50338#0" expanded="false" />
+                <element signature="e#50679#50949#0" expanded="false" />
+                <element signature="e#50972#51043#0" expanded="false" />
+                <element signature="method#createContentPane#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setButtonsAlignment#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setCancelButtonIcon#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setOKButtonIcon#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#53369#53378#0" expanded="false" />
+                <element signature="method#doHelpAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getLocation#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setLocation#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#showAndGet#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#showAndGetOk#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#invokeShow#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#56286:56419" expanded="false" />
+                <element signature="method#getInitialLocation#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setInitialLocationCallback#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#registerKeyboardShortcuts#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#57593#57660#0" expanded="false" />
+                <element signature="method#createCancelAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#58832:59062" expanded="false" />
+                <element signature="method#actionPerformed#0;class#58832:59062" expanded="false" />
+                <element signature="method#focusPreviousButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#focusNextButton#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#isMultipleModalDialogs#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setErrorText#1;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setErrorInfoAll#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#61212#61351#0" expanded="false" />
+                <element signature="e#61433#61599#0" expanded="false" />
+                <element signature="e#61734#61871#0" expanded="false" />
+                <element signature="e#61881#61998#0" expanded="false" />
+                <element signature="e#62119#62197#0" expanded="false" />
+                <element signature="e#62207#63149#0" expanded="false" />
+                <element signature="e#63304#63441#0" expanded="false" />
+                <element signature="e#63451#63563#0" expanded="false" />
+                <element signature="e#65415#65520#0" expanded="false" />
+                <element signature="e#65641#65752#0" expanded="false" />
+                <element signature="e#65948#66240#0" expanded="false" />
+                <element signature="method#setErrorTipText#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getFocusable#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#67891#67955#0" expanded="false" />
+                <element signature="method#updateSize#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#findInstance#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#findInstanceFromFocus#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#resizeWithAnimation#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#69091:70049" expanded="false" />
+                <element signature="method#run#0;class#69091:70049" expanded="false" />
+                <element signature="method#getPeer#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#ensureEventDispatchThread#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getDisposable#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getErrorPaintingType#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="initializer##0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#DialogStyle#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#DialogStyle#0;class#DialogStyle#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#ErrorPaintingType#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#ErrorPaintingType#0;class#ErrorPaintingType#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#ErrorFocusListener#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#focusGained#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#focusLost#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#showErrorTip#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#ErrorTipTracker#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#ErrorTipTracker#0;class#ErrorTipTracker#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#recalculateLocation#0;class#ErrorTipTracker#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#ErrorPainter#0;class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#executePaint#0;class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setValidationInfo#0;class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#Adapter#0;class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#getDoNotShowMessage#0;class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#setToBeShown#0;class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#ErrorText#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#clearError#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#appendError#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#80086#80186#0" expanded="false" />
+                <element signature="method#isTextSet#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="e#80822#80886#0" expanded="false" />
+                <element signature="class#HelpAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#DialogWrapperExitAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#DialogWrapperExitAction#0;class#DialogWrapperExitAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#doAction#0;class#DialogWrapperExitAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#CancelAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#OkAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#OkAction#0;class#OkAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#doAction#0;class#OkAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#DialogWrapperAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#DialogWrapperAction#0;class#DialogWrapperAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#actionPerformed#0;class#DialogWrapperAction#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="class#IdeModalityType#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#IdeModalityType#0;class#IdeModalityType#0;class#DialogWrapper#0" expanded="false" />
+                <element signature="method#toAwtModality#0;class#IdeModalityType#0;class#DialogWrapper#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,17 +305,32 @@
       <file leaf-file-name="ConfigProjectDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="763">
               <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigProjectDialog.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
+      <file leaf-file-name="DialogWrapperPeer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/DialogWrapperPeer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChooseProjectPathDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -133,8 +358,15 @@
       <find>localProjectPath</find>
       <find>todo</find>
       <find>错误</find>
-      <find>initS</find>
       <find>FileOutputStream</find>
+      <find>initS</find>
+      <find>createCenterPanel</find>
+      <find>init</find>
+      <find>DialogWrapperPeer</find>
+      <find>myPeer</find>
+      <find>DialogWrapper</find>
+      <find>parentComponent</find>
+      <find>打开</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,18 +387,20 @@
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/MessageUtil.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.form" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.form" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.form" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/listener/OnFinishProjectPathListener.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/listener/OnConfigProjectListener.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/listener/OnChooseArchetypeListener.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.form" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.form" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java" />
       </list>
     </option>
   </component>
@@ -197,6 +431,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,7 +479,24 @@
               <item name="Plugin_Archetyoe_For_Android" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="archetype" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
+              <item name="LoadingDialog" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Plugin_Archetyoe_For_Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plugin_Archetyoe_For_Android" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="archetype" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
+              <item name="ShowArchetypesDialog" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Plugin_Archetyoe_For_Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plugin_Archetyoe_For_Android" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="archetype" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
+              <item name="TestDialog" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="Plugin_Archetyoe_For_Android" type="b2602c69:ProjectViewProjectNode" />
@@ -256,10 +509,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,12 +653,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41495124" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.094257854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25989583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -430,13 +681,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java</url>
-          <line>261</line>
+          <line>270</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java</url>
-          <line>260</line>
+          <line>269</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -464,35 +715,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="44" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Android_Archetype_Project.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Window.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -515,10 +737,11 @@
           <caret line="36" column="58" lean-forward="false" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3791#3792#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#6923#6924#0" expanded="true" />
-            <element signature="e#6995#6996#0" expanded="true" />
+            <element signature="e#2705#2713#0" expanded="true" />
+            <element signature="e#3918#3919#0" expanded="true" />
+            <element signature="e#3987#3988#0" expanded="true" />
+            <element signature="e#7127#7128#0" expanded="true" />
+            <element signature="e#7199#7200#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="33" column="44" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,7 +764,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#1370#1418#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -574,10 +800,11 @@
           <caret line="65" column="40" lean-forward="true" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3791#3792#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#6923#6924#0" expanded="true" />
-            <element signature="e#6995#6996#0" expanded="true" />
+            <element signature="e#2705#2713#0" expanded="true" />
+            <element signature="e#3918#3919#0" expanded="true" />
+            <element signature="e#3987#3988#0" expanded="true" />
+            <element signature="e#7127#7128#0" expanded="true" />
+            <element signature="e#7199#7200#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -593,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="33" column="44" lean-forward="false" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,111 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6831">
           <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-          <folding>
-            <marker date="1516017464000" expanded="false" signature="3:117" ph="/.../" />
-            <marker date="1516017464000" expanded="true" signature="2670:2693" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="2723:2746" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="2789:2812" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="2905:2928" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="2975:2998" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3042:3065" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3110:3133" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3171:3194" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3231:3254" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3371:3394" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3495:3518" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3524:3554" ph="/**...*/" />
-            <marker date="1516017464000" expanded="true" signature="3655:3678" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3830:3853" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="3958:3981" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="4147:4170" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="4299:4322" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="4456:4479" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="4684:4707" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="4839:4862" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5145:5168" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5201:5224" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5269:5292" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5345:5368" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5411:5434" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5478:5501" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5589:5612" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5650:5673" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5771:5794" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="5917:5940" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="6108:6131" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="6225:6248" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="6411:6434" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="6577:6600" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="6740:6763" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="6879:6902" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7008:7031" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7229:7252" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7354:7377" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7480:7503" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7603:7626" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7672:7695" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7807:7830" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="7948:7971" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8067:8090" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8185:8208" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8255:8278" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8395:8418" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8449:8472" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8653:8676" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8708:8731" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8834:8857" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="8988:9011" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9109:9132" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9317:9340" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9377:9400" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9445:9468" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9500:9523" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9554:9577" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9671:9694" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9731:9754" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9798:9821" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="9944:9967" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10055:10078" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10164:10187" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10292:10315" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10358:10381" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10416:10439" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10653:10676" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10748:10771" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="10882:10988" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="11023:11110" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="11081:11104" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="11212:11391" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="11249:11272" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="11362:11385" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="11497:11769" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="11627:11650" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="11740:11763" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="11849:11973" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="11893:11916" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="11944:11967" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="12047:12448" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="12243:12266" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="12294:12317" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="12351:12374" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="12419:12442" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="12529:12625" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="12664:12798" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="12769:12792" ph="{}" />
-            <marker date="1516017464000" expanded="true" signature="12845:12985" ph="{...}" />
-            <marker date="1516017464000" expanded="true" signature="12956:12979" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3105">
-          <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,28 +867,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1268#1269#0" expanded="false" />
-            <element signature="e#1307#1308#0" expanded="false" />
-            <element signature="e#1488#1489#0" expanded="false" />
-            <element signature="e#1522#1523#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.form">
@@ -784,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,15 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,38 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="81" column="48" lean-forward="true" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3791#3792#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#6923#6924#0" expanded="true" />
-            <element signature="e#6995#6996#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="81" column="48" lean-forward="false" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -861,7 +917,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="7502">
           <caret line="365" column="46" lean-forward="false" selection-start-line="365" selection-start-column="30" selection-end-line="365" selection-end-column="46" />
           <folding />
         </state>
@@ -871,7 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="612" column="46" lean-forward="true" selection-start-line="612" selection-start-column="46" selection-end-line="612" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,17 +941,317 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="87" column="21" lean-forward="true" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        <state relative-caret-position="1364">
+          <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/vcs/ProjectLevelVcsManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2838">
+          <caret line="153" column="29" lean-forward="false" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
+          <folding>
+            <marker date="1516017466000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1516017466000" expanded="false" signature="148:1284" ph="..." />
+            <marker date="1516017466000" expanded="true" signature="1660:1667" ph="{}" />
+            <marker date="1516017466000" expanded="true" signature="1835:1974" ph="{...}" />
+            <marker date="1516017466000" expanded="true" signature="2053:2312" ph="{...}" />
+            <marker date="1516017466000" expanded="true" signature="2119:2304" ph="{...}" />
+            <marker date="1516017466000" expanded="true" signature="3386:3404" ph="/**...*/" />
+            <marker date="1516017466000" expanded="true" signature="4109:4127" ph="/**...*/" />
+            <marker date="1516017466000" expanded="true" signature="4208:4226" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="59" column="18" lean-forward="false" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="e#1370#1418#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/DialogWrapperPeer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/DialogWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="974" column="31" lean-forward="true" selection-start-line="974" selection-start-column="31" selection-end-line="974" selection-end-column="31" />
+          <folding>
+            <element signature="method#getDoNotShowMessage#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#DialogWrapper#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#DialogWrapper#1;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#9102:9330" expanded="false" />
+            <element signature="e#10158#10786#0" expanded="true" />
+            <element signature="e#10785#10786#0" expanded="true" />
+            <element signature="docComment;method#DialogWrapper#5;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#DialogWrapper#5;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#DialogWrapper#6;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#11956:12184" expanded="false" />
+            <element signature="method#DialogWrapper#7;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#13878:14106" expanded="false" />
+            <element signature="method#getValidationThreadToUse#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#doValidateAll#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#installErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#15747#15881#0" expanded="false" />
+            <element signature="method#updateErrorInfo#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#16252#16616#0" expanded="false" />
+            <element signature="method#createDefaultActions#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#addMouseListener#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#addMouseListener#1;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#addKeyListener#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#close#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createContentPaneBorder#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#isMoveHelpButtonLeft#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#isRemoveHelpButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createSouthPanel#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createHelpButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setHelpTooltip#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#flattenOptionsActions#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getStyle#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createButtons#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createSouthPanel#1;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#24246:24560" expanded="false" />
+            <element signature="method#getBackground#0;class#24246:24560" expanded="false" />
+            <element signature="method#createDoNotAskCheckbox#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createButtonsPanel#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createJButtonForAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createJOptionsButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#31098:31431" expanded="false" />
+            <element signature="method#actionPerformed#0;class#31098:31431" expanded="false" />
+            <element signature="method#extractMnemonic#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setMargin#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createPeer#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="docComment;method#createPeer#1;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#33724#33735#0" expanded="false" />
+            <element signature="method#createPeer#1;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createPeer#2;class#DialogWrapper#0" expanded="false" />
+            <element signature="docComment;method#createPeer#3;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#34478#34489#0" expanded="false" />
+            <element signature="method#createPeer#3;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createPeer#5;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setAutoAdjustable#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#isAutoAdjustable#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#dispose#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#cleanupRootPane#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#37896#38258#0" expanded="false" />
+            <element signature="method#unregisterKeyboardActions#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#cleanupWindowListeners#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#39846#40281#0" expanded="false" />
+            <element signature="method#doCancelAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#processDoNotAskOnCancel#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#clickDefaultButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#doOKAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#processDoNotAskOnOk#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createActions#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#createLeftSideActions#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getOKAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getCancelAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getHelpAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#43065#43074#0" expanded="false" />
+            <element signature="method#getPreferredFocusedComponent#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#44667:45795" expanded="false" />
+            <element signature="method#componentResized#0;class#44667:45795" expanded="false" />
+            <element signature="class#45917:46087" expanded="false" />
+            <element signature="e#46328#46389#0" expanded="false" />
+            <element signature="method#installEnterHook#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#48148:48756" expanded="false" />
+            <element signature="method#actionPerformed#0;class#48148:48756" expanded="false" />
+            <element signature="method#update#0;class#48148:48756" expanded="false" />
+            <element signature="method#expandNextOptionButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#startTrackingValidation#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#49558#49743#0" expanded="false" />
+            <element signature="method#initValidation#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#49884#50338#0" expanded="false" />
+            <element signature="e#50679#50949#0" expanded="false" />
+            <element signature="e#50972#51043#0" expanded="false" />
+            <element signature="method#createContentPane#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setButtonsAlignment#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setCancelButtonIcon#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setOKButtonIcon#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#53369#53378#0" expanded="false" />
+            <element signature="method#doHelpAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getLocation#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setLocation#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#showAndGet#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#showAndGetOk#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#invokeShow#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#56286:56419" expanded="false" />
+            <element signature="method#getInitialLocation#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setInitialLocationCallback#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#registerKeyboardShortcuts#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#57593#57660#0" expanded="false" />
+            <element signature="method#createCancelAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#58832:59062" expanded="false" />
+            <element signature="method#actionPerformed#0;class#58832:59062" expanded="false" />
+            <element signature="method#focusPreviousButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#focusNextButton#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#isMultipleModalDialogs#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setErrorText#1;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setErrorInfoAll#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#61212#61351#0" expanded="false" />
+            <element signature="e#61433#61599#0" expanded="false" />
+            <element signature="e#61734#61871#0" expanded="false" />
+            <element signature="e#61881#61998#0" expanded="false" />
+            <element signature="e#62119#62197#0" expanded="false" />
+            <element signature="e#62207#63149#0" expanded="false" />
+            <element signature="e#63304#63441#0" expanded="false" />
+            <element signature="e#63451#63563#0" expanded="false" />
+            <element signature="e#65415#65520#0" expanded="false" />
+            <element signature="e#65641#65752#0" expanded="false" />
+            <element signature="e#65948#66240#0" expanded="false" />
+            <element signature="method#setErrorTipText#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getFocusable#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#67891#67955#0" expanded="false" />
+            <element signature="method#updateSize#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#findInstance#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#findInstanceFromFocus#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#resizeWithAnimation#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#69091:70049" expanded="false" />
+            <element signature="method#run#0;class#69091:70049" expanded="false" />
+            <element signature="method#getPeer#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#ensureEventDispatchThread#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getDisposable#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getErrorPaintingType#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="initializer##0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#DialogStyle#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#DialogStyle#0;class#DialogStyle#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#ErrorPaintingType#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#ErrorPaintingType#0;class#ErrorPaintingType#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#ErrorFocusListener#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#focusGained#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#focusLost#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#showErrorTip#0;class#ErrorFocusListener#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#ErrorTipTracker#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#ErrorTipTracker#0;class#ErrorTipTracker#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#recalculateLocation#0;class#ErrorTipTracker#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#ErrorPainter#0;class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#executePaint#0;class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setValidationInfo#0;class#ErrorPainter#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#Adapter#0;class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#getDoNotShowMessage#0;class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#setToBeShown#0;class#Adapter#0;class#DoNotAskOption#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#ErrorText#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#clearError#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#appendError#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#80086#80186#0" expanded="false" />
+            <element signature="method#isTextSet#0;class#ErrorText#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="e#80822#80886#0" expanded="false" />
+            <element signature="class#HelpAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#DialogWrapperExitAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#DialogWrapperExitAction#0;class#DialogWrapperExitAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#doAction#0;class#DialogWrapperExitAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#CancelAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#OkAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#OkAction#0;class#OkAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#doAction#0;class#OkAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#DialogWrapperAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#DialogWrapperAction#0;class#DialogWrapperAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#actionPerformed#0;class#DialogWrapperAction#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="class#IdeModalityType#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#IdeModalityType#0;class#IdeModalityType#0;class#DialogWrapper#0" expanded="false" />
+            <element signature="method#toAwtModality#0;class#IdeModalityType#0;class#DialogWrapper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="115" column="32" lean-forward="false" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="60" column="21" lean-forward="false" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2705#2713#0" expanded="true" />
+            <element signature="e#3918#3919#0" expanded="true" />
+            <element signature="e#3987#3988#0" expanded="true" />
+            <element signature="e#7127#7128#0" expanded="true" />
+            <element signature="e#7199#7200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
