@@ -78,7 +78,7 @@ public class FileUtil {
         try {
             // 读取内容
             StringBuilder stringBuilder = new StringBuilder();
-            bufReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(filePath))));
+            bufReader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(filePath)),"UTF-8"));
             String line = null;
             while ((line = bufReader.readLine()) != null) {
                 stringBuilder.append(line);
@@ -91,7 +91,7 @@ public class FileUtil {
             String newContent = content.replace(oldText, newText);
 
             // 写入新内容
-            bufWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(filePath), false)));
+            bufWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File(filePath), false),"UTF-8"));
             bufWriter.write(newContent);
             bufWriter.close();
             return true;

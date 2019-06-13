@@ -79,6 +79,7 @@ public class NewArchetypeProject extends AnAction {
         archtypes.add("https://github.com/dragonforestgroup/Library_DragonForestAop.git");
         archtypes.add("https://github.com/dragonforestgroup/Plugin_DragonForestPlugin.git");
         archtypes.add("https://github.com/hanlonglinandroidstudys/MaterialDesignStudy.git");
+        archtypes.add("https://github.com/TestHanlonglin/TemplateAndroidApplication.git");
         showArchetypesDialog.setListData(archtypes);
         //dialog.pack();
         showArchetypesDialog.setSize(600, 400);
@@ -264,11 +265,11 @@ public class NewArchetypeProject extends AnAction {
             return false;
         }
 
-        // 6.修改gradle中的配置的applicationId 认为applicatinoId和包名一致
+        // 6.修改gradle中的配置的applicationId 认为原有的applicatinoId和包名一致
         String gradleConfigPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "config.gradle";
-        boolean isApplicationIdModified = FileUtil.readAndReplace(gradleConfigPath, packageNameOld, appModel.getPackageName());
+        boolean isApplicationIdModified = FileUtil.readAndReplace(gradleConfigPath, packageNameOld, appModel.getApplicationId());
         if (!isApplicationIdModified) {
             MessageUtil.showMessage("错误","applicationId修改出错！请检查config.gradle是否存在！",Messages.getErrorIcon());
             return false;

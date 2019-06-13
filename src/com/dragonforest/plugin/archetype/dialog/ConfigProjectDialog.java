@@ -57,8 +57,8 @@ public class ConfigProjectDialog extends JDialog {
 
     private void initShow() {
         jtf_appName.setText("MyArchetypeApp");
-        jtf_packageName.setText("com.example.package");
-        jtf_applcationId.setText("com.example.package");
+        jtf_packageName.setText("com.example.dragon");
+        jtf_applcationId.setText("com.example.dragon");
     }
 
     private void onOK() {
