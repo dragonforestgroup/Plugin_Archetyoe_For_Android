@@ -19,7 +19,7 @@ public class ShowArchetypesDialog extends JDialog {
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        contentPane.setSize(400, 600);
+        setSize(600, 400);
         setLocationRelativeTo(null);
         setTitle("please choose archetype for your project..");
 

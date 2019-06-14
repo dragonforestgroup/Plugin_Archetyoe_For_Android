@@ -28,7 +28,7 @@ public class ChooseProjectPathDialog extends JDialog {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-        setSize(600, 400);
+        setSize(600, 200);
 
         jtf_baseDir.setEditable(false);
         setLocationRelativeTo(null);
@@ -73,7 +73,7 @@ public class ChooseProjectPathDialog extends JDialog {
     private void initShow() {
         String basePath = project.getBasePath();
         String name = project.getName();
-        String workSpacePath = basePath.substring(0, basePath.indexOf(name)-1);
+        String workSpacePath = basePath.substring(0, basePath.indexOf(name) - 1);
 
         String projectName = defaultProjectName;
         while (true) {
@@ -145,9 +145,9 @@ public class ChooseProjectPathDialog extends JDialog {
         dispose();
     }
 
-    private void onPrevious(){
+    private void onPrevious() {
         setVisible(false);
-        if(onFinishProjectPathListener!=null){
+        if (onFinishProjectPathListener != null) {
             onFinishProjectPathListener.onPrevious();
         }
     }

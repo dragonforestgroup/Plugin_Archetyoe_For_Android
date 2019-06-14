@@ -1,22 +1,27 @@
 package com.dragonforest.plugin.archetype;
 
-import com.dragonforest.plugin.archetype.dialog.*;
+import com.dragonforest.plugin.archetype.dialog.ChooseProjectPathDialog;
+import com.dragonforest.plugin.archetype.dialog.ConfigProjectDialog;
+import com.dragonforest.plugin.archetype.dialog.LoadingDialog;
+import com.dragonforest.plugin.archetype.dialog.ShowArchetypesDialog;
 import com.dragonforest.plugin.archetype.listener.OnChooseArchetypeListener;
 import com.dragonforest.plugin.archetype.listener.OnConfigProjectListener;
 import com.dragonforest.plugin.archetype.listener.OnFinishProjectPathListener;
 import com.dragonforest.plugin.archetype.model.AppModel;
-import com.dragonforest.plugin.archetype.utils.*;
-import com.intellij.ide.util.projectWizard.importSources.ProjectStructureDetector;
+import com.dragonforest.plugin.archetype.utils.FileUtil;
+import com.dragonforest.plugin.archetype.utils.GitUtil;
+import com.dragonforest.plugin.archetype.utils.MessageUtil;
+import com.dragonforest.plugin.archetype.utils.XmlUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.project.ProjectLocator;
-import com.intellij.openapi.roots.ProjectRootManager;
+import com.intellij.openapi.project.ProjectManager;
 import com.intellij.openapi.ui.Messages;
-import com.intellij.openapi.vcs.ProjectLevelVcsManager;
+import org.jdom.JDOMException;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -55,6 +60,7 @@ public class NewArchetypeProject extends AnAction {
         //测试dialog
 //        TestDialog testDialog=new TestDialog(project);
 //        testDialog.show();
+
     }
 
     /**
@@ -79,14 +85,13 @@ public class NewArchetypeProject extends AnAction {
         });
 
         //设置数据
+        // TODO: 2019/6/14  这里可能是从服务器获取 
         ArrayList<String> archtypes = new ArrayList<String>();
-        archtypes.add("https://github.com/dragonforestgroup/Library_DragonForestAop.git");
-        archtypes.add("https://github.com/dragonforestgroup/Plugin_DragonForestPlugin.git");
-        archtypes.add("https://github.com/hanlonglinandroidstudys/MaterialDesignStudy.git");
+//        archtypes.add("https://github.com/dragonforestgroup/Library_DragonForestAop.git");
+//        archtypes.add("https://github.com/dragonforestgroup/Plugin_DragonForestPlugin.git");
+//        archtypes.add("https://github.com/hanlonglinandroidstudys/MaterialDesignStudy.git");
         archtypes.add("https://github.com/TestHanlonglin/TemplateAndroidApplication.git");
         showArchetypesDialog.setListData(archtypes);
-        //dialog.pack();
-        showArchetypesDialog.setSize(600, 400);
         showArchetypesDialog.setVisible(true);
 
     }
@@ -133,7 +138,7 @@ public class NewArchetypeProject extends AnAction {
 
                 // 异步加载
                 LoadingDialog.loading("cloning from " + archeTypeName);
-                GitUtil.asynCloneToLocalPath(project,NewArchetypeProject.this.archeTypeName, NewArchetypeProject.this.localProjectPath, new GitUtil.OnCloneListener() {
+                GitUtil.asynCloneToLocalPath(project, NewArchetypeProject.this.archeTypeName, NewArchetypeProject.this.localProjectPath, new GitUtil.OnCloneListener() {
                     @Override
                     public void onCloneSuccess() {
                         LoadingDialog.loading("modifying...");
@@ -146,7 +151,14 @@ public class NewArchetypeProject extends AnAction {
                         }
                         LoadingDialog.cancel();
                         // 3.打开项目
-                        MessageUtil.showMessage("创建完成", "请打开项目：" + localProjectPath, Messages.getInformationIcon());
+                        MessageUtil.showMessage("创建完成", "即将打开项目：" + new File(localProjectPath).getAbsolutePath(), Messages.getInformationIcon());
+                        try {
+                            ProjectManager.getInstance().loadAndOpenProject(localProjectPath);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } catch (JDOMException e) {
+                            e.printStackTrace();
+                        }
                     }
 
                     @Override
@@ -249,7 +261,7 @@ public class NewArchetypeProject extends AnAction {
         // 4.修改AndroidManifest.xml中的包名
         boolean isManifestModified = manifestXmlUtil.modifyManifestPacakgeName(appModel.getPackageName());
         if (!isManifestModified) {
-            MessageUtil.showMessage("错误","Manifest.xml修改出错！Manifest.xml是否存在！",Messages.getErrorIcon());
+            MessageUtil.showMessage("错误", "Manifest.xml修改出错！Manifest.xml是否存在！", Messages.getErrorIcon());
             return false;
         }
 
@@ -270,7 +282,7 @@ public class NewArchetypeProject extends AnAction {
         XmlUtil stringsXmlUtil = new XmlUtil(StringsXmlPath);
         boolean isAppNameModified = stringsXmlUtil.modifyStringsAppName(appModel.getAppName());
         if (!isAppNameModified) {
-            MessageUtil.showMessage("错误","appName修改失败！请检查strings.xml中app_name是否配置正常！",Messages.getErrorIcon());
+            MessageUtil.showMessage("错误", "appName修改失败！请检查strings.xml中app_name是否配置正常！", Messages.getErrorIcon());
             return false;
         }
 
@@ -280,7 +292,7 @@ public class NewArchetypeProject extends AnAction {
                 + "config.gradle";
         boolean isApplicationIdModified = FileUtil.readAndReplace(gradleConfigPath, packageNameOld, appModel.getApplicationId());
         if (!isApplicationIdModified) {
-            MessageUtil.showMessage("错误","applicationId修改出错！请检查config.gradle是否存在！",Messages.getErrorIcon());
+            MessageUtil.showMessage("错误", "applicationId修改出错！请检查config.gradle是否存在！", Messages.getErrorIcon());
             return false;
         }
 
