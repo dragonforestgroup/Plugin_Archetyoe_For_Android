@@ -80,8 +80,7 @@ public class ChooseProjectPathDialog extends JDialog {
             File file = new File(workSpacePath + File.separator + projectName);
             if (file.exists()) {
                 projectName = defaultProjectName + projectIndex;
-                projectIndex
-                        ++;
+                projectIndex++;
                 continue;
             }
             break;
@@ -96,7 +95,6 @@ public class ChooseProjectPathDialog extends JDialog {
         if (chooseDir == null)
             return;
         jtf_baseDir.setText(chooseDir);
-        Messages.showMessageDialog("选择文件路径" + chooseDir, "", Messages.getInformationIcon());
     }
 
     private String getChooseDir() {
@@ -128,7 +126,7 @@ public class ChooseProjectPathDialog extends JDialog {
             return;
         }
 
-        dispose();
+        setVisible(false);
 
         String projectDir = baseDir + File.separator + projectName;
         File file = new File(projectDir);

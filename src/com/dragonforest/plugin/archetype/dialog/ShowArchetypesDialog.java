@@ -1,7 +1,6 @@
 package com.dragonforest.plugin.archetype.dialog;
 
 import com.dragonforest.plugin.archetype.listener.OnChooseArchetypeListener;
-import com.intellij.openapi.ui.Messages;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -43,16 +42,15 @@ public class ShowArchetypesDialog extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
-
-
     }
 
     private void onOK() {
         // add your code here
-        setVisible(false);
         String selectedValue = (String) archetypeList.getSelectedValue();
-        if (selectedValue == null || selectedValue.equals(""))
+        if (selectedValue == null || selectedValue.equals("")) {
             return;
+        }
+        setVisible(false);
         if (onChooseArchetypeListener != null) {
             onChooseArchetypeListener.onChoose(selectedValue);
         }

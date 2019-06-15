@@ -2,6 +2,7 @@ package com.dragonforest.plugin.archetype.dialog;
 
 import com.dragonforest.plugin.archetype.listener.OnConfigProjectListener;
 import com.dragonforest.plugin.archetype.model.AppModel;
+import com.dragonforest.plugin.archetype.utils.ValidateUtil;
 import com.intellij.openapi.ui.Messages;
 
 import javax.swing.*;
@@ -66,7 +67,7 @@ public class ConfigProjectDialog extends JDialog {
         String appName = jtf_appName.getText().toString().trim();
         String applicationId = jtf_applcationId.getText().toString().trim();
         String packageName = jtf_packageName.getText().toString().trim();
-
+        // 输入验证
         if (appName == null
                 || appName.equals("")
                 || applicationId == null
@@ -76,8 +77,13 @@ public class ConfigProjectDialog extends JDialog {
             Messages.showMessageDialog("输入项不能为空！", "警告", Messages.getInformationIcon());
             return;
         }
-        dispose();
+        ValidateUtil.Result result = ValidateUtil.validePackageName(packageName);
+        if(!result.isOk()){
+            Messages.showMessageDialog("包名验证失败！"+result.getMsg(), "警告", Messages.getInformationIcon());
+            return;
+        }
 
+        setVisible(false);
         AppModel appModel = new AppModel();
         appModel.setAppName(appName);
         appModel.setApplicationId(applicationId);

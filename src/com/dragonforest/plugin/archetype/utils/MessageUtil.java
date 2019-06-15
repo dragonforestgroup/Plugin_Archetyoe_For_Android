@@ -16,4 +16,8 @@ public class MessageUtil {
             showMessage(title, message, icon);
         }
     }
+
+    public static String showMessageDialogInputArchetype(){
+        return Messages.showInputDialog("please input github url here:","add archetype",Messages.getInformationIcon());
+    }
 }

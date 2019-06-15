@@ -39,6 +39,11 @@ public class GitUtil {
 
     public static void asynCloneToLocalPath(Project project, String gitUri, String localPath, OnCloneListener onCloneListener){
 
+        /*
+         * Task 实现异步任务 ，
+         * run() 在新线程
+         * onSuccess() 回到原来的线程
+         */
         new Task.Backgroundable(project, DvcsBundle.message("cloning.repository", gitUri)) {
             @Override
             public void run(ProgressIndicator indicator) {

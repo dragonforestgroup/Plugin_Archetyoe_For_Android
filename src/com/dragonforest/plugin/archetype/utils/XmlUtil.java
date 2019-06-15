@@ -1,5 +1,6 @@
 package com.dragonforest.plugin.archetype.utils;
 
+import com.dragonforest.plugin.archetype.model.AboutModel;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -14,6 +15,8 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class XmlUtil {
 
@@ -34,6 +37,7 @@ public class XmlUtil {
             e.printStackTrace();
         }
     }
+
 
     /**
      * 从AndroidManifest.xml中读取包名
@@ -74,12 +78,12 @@ public class XmlUtil {
         Element resourceElement = document.getDocumentElement();
         NodeList nodeList = resourceElement.getElementsByTagName("string");
         for (int i = 0; i < nodeList.getLength(); i++) {
-            Element item = (Element)nodeList.item(i);
+            Element item = (Element) nodeList.item(i);
             if (item != null) {
-                if(item.hasAttribute("name")){
-                    String attrName=item.getAttribute("name");
-                    if("app_name".equals(attrName)){
-                        String appName1=item.getFirstChild().getNodeValue();
+                if (item.hasAttribute("name")) {
+                    String attrName = item.getAttribute("name");
+                    if ("app_name".equals(attrName)) {
+                        String appName1 = item.getFirstChild().getNodeValue();
                         item.getFirstChild().setNodeValue(appName);
                     }
                 }
@@ -89,11 +93,54 @@ public class XmlUtil {
     }
 
     /**
+     * 向strings中添加about信息
+     *
+     * @param aboutModel
+     * @return
+     */
+    public boolean addAboutinfo2Strings(AboutModel aboutModel){
+        if (document == null)
+            return false;
+        Element resourceElement = document.getDocumentElement();
+
+        Element companyNameElement=document.createElement("string");
+        companyNameElement.appendChild(document.createTextNode(aboutModel.getCompanyName()));
+        companyNameElement.setAttribute("name","app_build_company_name");
+        resourceElement.appendChild(companyNameElement);
+
+        Element companyPhoneElement=document.createElement("string");
+        companyPhoneElement.appendChild(document.createTextNode(aboutModel.getCompanyPhone()));
+        companyPhoneElement.setAttribute("name","app_build_company_phone");
+        resourceElement.appendChild(companyPhoneElement);
+
+        Element companyUrlElement=document.createElement("string");
+        companyUrlElement.appendChild(document.createTextNode(aboutModel.getCompanyUrl()));
+        companyUrlElement.setAttribute("name","app_build_company_url_name");
+        resourceElement.appendChild(companyUrlElement);
+
+        Element supportElement=document.createElement("string");
+        supportElement.appendChild(document.createTextNode(aboutModel.getSupport()));
+        supportElement.setAttribute("name","app_support_company_name");
+        resourceElement.appendChild(supportElement);
+
+        Element supportPhoneElement=document.createElement("string");
+        supportPhoneElement.appendChild(document.createTextNode(aboutModel.getSupportPhone()));
+        supportPhoneElement.setAttribute("name","app_support_company_phone");
+        resourceElement.appendChild(supportPhoneElement);
+
+        return saveToXmlFile();
+    }
+
+
+
+
+
+    /**
      * 保存当前的document到xml文件中
      *
      * @return
      */
-    private boolean saveToXmlFile(){
+    private boolean saveToXmlFile() {
         /*输出文件到XML中*/
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         try {
@@ -119,4 +166,6 @@ public class XmlUtil {
         }
         return false;
     }
+
+
 }

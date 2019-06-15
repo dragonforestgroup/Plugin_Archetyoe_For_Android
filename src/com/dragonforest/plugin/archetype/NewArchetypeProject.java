@@ -1,12 +1,12 @@
 package com.dragonforest.plugin.archetype;
 
-import com.dragonforest.plugin.archetype.dialog.ChooseProjectPathDialog;
-import com.dragonforest.plugin.archetype.dialog.ConfigProjectDialog;
-import com.dragonforest.plugin.archetype.dialog.LoadingDialog;
-import com.dragonforest.plugin.archetype.dialog.ShowArchetypesDialog;
+import com.dragonforest.plugin.archetype.config.Configuration;
+import com.dragonforest.plugin.archetype.dialog.*;
 import com.dragonforest.plugin.archetype.listener.OnChooseArchetypeListener;
+import com.dragonforest.plugin.archetype.listener.OnConfigAboutInfoListener;
 import com.dragonforest.plugin.archetype.listener.OnConfigProjectListener;
 import com.dragonforest.plugin.archetype.listener.OnFinishProjectPathListener;
+import com.dragonforest.plugin.archetype.model.AboutModel;
 import com.dragonforest.plugin.archetype.model.AppModel;
 import com.dragonforest.plugin.archetype.utils.FileUtil;
 import com.dragonforest.plugin.archetype.utils.GitUtil;
@@ -22,7 +22,6 @@ import org.jdom.JDOMException;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -43,10 +42,16 @@ public class NewArchetypeProject extends AnAction {
      */
     AppModel appModel = null;
 
+    /**
+     * about信息
+     */
+    AboutModel aboutModel=null;
+
     // 对话框
     private ShowArchetypesDialog showArchetypesDialog;
     private ChooseProjectPathDialog chooseProjectPathDialog;
     private ConfigProjectDialog configProjectDialog;
+    private ConfigAboutInfoDialog configAboutInfoDialog;
 
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
@@ -85,13 +90,7 @@ public class NewArchetypeProject extends AnAction {
         });
 
         //设置数据
-        // TODO: 2019/6/14  这里可能是从服务器获取 
-        ArrayList<String> archtypes = new ArrayList<String>();
-//        archtypes.add("https://github.com/dragonforestgroup/Library_DragonForestAop.git");
-//        archtypes.add("https://github.com/dragonforestgroup/Plugin_DragonForestPlugin.git");
-//        archtypes.add("https://github.com/hanlonglinandroidstudys/MaterialDesignStudy.git");
-        archtypes.add("https://github.com/TestHanlonglin/TemplateAndroidApplication.git");
-        showArchetypesDialog.setListData(archtypes);
+        showArchetypesDialog.setListData(Configuration.getInstance().getArchetypes());
         showArchetypesDialog.setVisible(true);
 
     }
@@ -105,10 +104,10 @@ public class NewArchetypeProject extends AnAction {
             @Override
             public void onFinish(String chooseDir) {
                 NewArchetypeProject.this.localProjectPath = chooseDir;
-
-                // 显示配置项目的属性dialog
-                showConfigProjectDialog();
                 MessageUtil.debugMessage("", "选择最终的path：" + chooseDir, Messages.getInformationIcon());
+
+                // 显示配置about的属性dialog
+                showConfigAboutInfoDialog();
             }
 
             @Override
@@ -117,6 +116,26 @@ public class NewArchetypeProject extends AnAction {
             }
         });
         chooseProjectPathDialog.setVisible(true);
+    }
+
+    /**
+     * 配置about信息
+     */
+    private void showConfigAboutInfoDialog(){
+        configAboutInfoDialog = new ConfigAboutInfoDialog();
+        configAboutInfoDialog.setOnConfigAboutInfoListener(new OnConfigAboutInfoListener() {
+            @Override
+            public void onFinish(AboutModel aboutModel) {
+                NewArchetypeProject.this.aboutModel=aboutModel;
+                showConfigProjectDialog();
+            }
+
+            @Override
+            public void onPrevious() {
+                chooseProjectPathDialog.setVisible(true);
+            }
+        });
+        configAboutInfoDialog.setVisible(true);
     }
 
     /**
@@ -134,7 +153,6 @@ public class NewArchetypeProject extends AnAction {
                 // 1.从git上克隆
                 // TODO: 2019/6/12 这里加一个进度框
                 // FIXME: 2019/6/12 异步克隆的问题（线程切换）
-
 
                 // 异步加载
                 LoadingDialog.loading("cloning from " + archeTypeName);
@@ -194,7 +212,7 @@ public class NewArchetypeProject extends AnAction {
 
             @Override
             public void onPrevious() {
-                chooseProjectPathDialog.setVisible(true);
+                configAboutInfoDialog.setVisible(true);
             }
         });
         configProjectDialog.setVisible(true);
@@ -265,7 +283,7 @@ public class NewArchetypeProject extends AnAction {
             return false;
         }
 
-        // 5.修改appNamse
+        // 5.修改strings.xml中的 appNamse
         String StringsXmlPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "app"
@@ -286,7 +304,14 @@ public class NewArchetypeProject extends AnAction {
             return false;
         }
 
-        // 6.修改gradle中的配置的applicationId 认为原有的applicatinoId和包名一致
+        // 6.向string.xml中添加about信息
+        boolean isAboutInfoAdded = stringsXmlUtil.addAboutinfo2Strings(aboutModel);
+        if(!isAboutInfoAdded){
+            MessageUtil.showMessage("错误", "关于信息添加失败！", Messages.getErrorIcon());
+            return false;
+        }
+
+        // 7.修改gradle中的配置的applicationId 认为原有的applicatinoId和包名一致
         String gradleConfigPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "config.gradle";
@@ -296,7 +321,7 @@ public class NewArchetypeProject extends AnAction {
             return false;
         }
 
-        // 7.删除main/java原有包名目录，并将临时目录中的文件拷贝过去,最后删除临时目录
+        // 8.删除main/java原有包名目录，并将临时目录中的文件拷贝过去,最后删除临时目录
         boolean isMainPackageDirCleaned = FileUtil.cleanDir(mainPackageDir);
         if (!isMainPackageDirCleaned) {
             return false;
@@ -313,7 +338,7 @@ public class NewArchetypeProject extends AnAction {
         }
         FileUtil.deleteDir(tempPackageDir);
 
-        // 8.删除test/java 下原有目录，并创建新的包名目录
+        // 9.删除test/java 下原有目录，并创建新的包名目录
         String testPackageDir = localProjectPath
                 + File.separator
                 + "app"
@@ -333,7 +358,7 @@ public class NewArchetypeProject extends AnAction {
             return false;
         }
 
-        // 9.删除androidTest/java 下原有目录，并创建新的包名目录
+        // 10.删除androidTest/java 下原有目录，并创建新的包名目录
         String androidTestPackageDir = localProjectPath
                 + File.separator
                 + "app"
