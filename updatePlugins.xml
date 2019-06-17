@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+    <plugin id="com.DragonForest.my.unique.plugin.id" url="http://localhost/downloads/hotcode2-idea-plugin.jar"
+            version="1.1"/>
+</plugins>

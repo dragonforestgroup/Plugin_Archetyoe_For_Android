@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ed59bdb-17f0-441d-8f6d-38da25c302c9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Android_Archetype_插件使用说明.docx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Android_Archetype_Project.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$1.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$2.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$3.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$4$1.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$4.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/NewArchetypeProject.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$1.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$2.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$3.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$4.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/GradleUtil.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/GradleUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/ValidateUtil$Result.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/ValidateUtil.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/ValidateUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/XmlUtil.class" afterPath="$PROJECT_DIR$/out/production/Android_Archetype_Project/com/dragonforest/plugin/archetype/utils/XmlUtil.class" />
+      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/ValidateUtil.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/ValidateUtil.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java" afterPath="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,126 +52,113 @@
       <file leaf-file-name="NewArchetypeProject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5117">
-              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="286">
+              <caret line="233" column="28" lean-forward="false" selection-start-line="233" selection-start-column="28" selection-end-line="233" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3791#3792#0" expanded="true" />
-                <element signature="e#3860#3861#0" expanded="true" />
-                <element signature="e#4425#4426#0" expanded="true" />
-                <element signature="e#4497#4498#0" expanded="true" />
-                <element signature="e#8015#8016#0" expanded="true" />
-                <element signature="e#8085#8086#0" expanded="true" />
+                <element signature="e#3667#3668#0" expanded="true" />
+                <element signature="e#3736#3737#0" expanded="true" />
+                <element signature="e#4301#4302#0" expanded="true" />
+                <element signature="e#4373#4374#0" expanded="true" />
+                <element signature="e#7908#7909#0" expanded="true" />
+                <element signature="e#7978#7979#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnConfigAboutInfoListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/listener/OnConfigAboutInfoListener.java">
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/model/AboutModel.java">
+      <file leaf-file-name="updatePlugins.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/updatePlugins.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="120" lean-forward="false" selection-start-line="13" selection-start-column="120" selection-end-line="13" selection-end-column="120" />
+            <state relative-caret-position="88">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="46" column="15" lean-forward="false" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
               <folding>
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1177#1178#0" expanded="true" />
-                <element signature="e#1216#1217#0" expanded="true" />
-                <element signature="e#1251#1252#0" expanded="true" />
-                <element signature="e#1307#1308#0" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
+                <element signature="e#1471#1519#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnConfigProjectListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/listener/OnConfigProjectListener.java">
+      <file leaf-file-name="GradleUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="139" column="9" lean-forward="false" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
+              <folding>
+                <element signature="e#161#162#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/MessageUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidateUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/ValidateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="6" selection-end-column="22" />
+              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigAboutInfoDialog.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigAboutInfoDialog.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ConfigProjectDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="102" column="12" lean-forward="false" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="30" />
+            <state relative-caret-position="268">
+              <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigAboutInfoDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigAboutInfoDialog.java">
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/model/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+            <state relative-caret-position="264">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java">
+      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="110">
-                <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigProjectDialog.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -191,6 +198,9 @@
       <find>getChooseDir</find>
       <find>打开项目</find>
       <find>onConfigProjectListener</find>
+      <find>modifiedGradleConfig</find>
+      <find>Result</find>
+      <find>modifyAppInfo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,7 +216,6 @@
       <list>
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/model/AppModel.java" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.form" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/LoadingDialog.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.form" />
@@ -219,10 +228,8 @@
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/TestDialog.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ChooseProjectPathDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/MessageUtil.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.form" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/ValidateUtil.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/config/Configuration.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigCopyrightDialog.form" />
@@ -230,9 +237,15 @@
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/listener/OnConfigAboutInfoListener.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/model/AboutModel.java" />
         <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigAboutInfoDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" />
-        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/model/Result.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/ValidateUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java" />
+        <option value="$PROJECT_DIR$/UploadPlugin.xml" />
+        <option value="$PROJECT_DIR$/uploadPlugins.xml" />
       </list>
     </option>
   </component>
@@ -263,9 +276,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,11 +284,24 @@
               <item name="Plugin_Archetyoe_For_Android" type="b2602c69:ProjectViewProjectNode" />
               <item name="Plugin_Archetyoe_For_Android" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Plugin_Archetyoe_For_Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plugin_Archetyoe_For_Android" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plugin_Archetyoe_For_Android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plugin_Archetyoe_For_Android" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +464,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -450,24 +473,24 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48754063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11809318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22395833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23726977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1017316" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1603467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5984849" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -478,51 +501,64 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java</url>
-          <line>300</line>
+          <line>301</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java</url>
-          <line>299</line>
+          <line>300</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java</url>
-          <line>77</line>
+          <line>150</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java</url>
-          <line>82</line>
+          <line>155</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Dialog.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="65" column="40" lean-forward="true" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3791#3792#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#4425#4426#0" expanded="true" />
-            <element signature="e#4497#4498#0" expanded="true" />
-            <element signature="e#8015#8016#0" expanded="true" />
-            <element signature="e#8085#8086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Android_Archetype_Project.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -632,10 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding>
-            <element signature="e#1097#1098#0" expanded="false" />
-            <element signature="e#1131#1132#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,53 +712,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/MessageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/ValidateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#1458#1459#0" expanded="false" />
-            <element signature="e#1493#1494#0" expanded="false" />
-            <element signature="e#1534#1535#0" expanded="false" />
-            <element signature="e#1567#1568#0" expanded="false" />
-            <element signature="e#1601#1602#0" expanded="false" />
-            <element signature="e#1635#1636#0" expanded="false" />
-            <element signature="e#1677#1678#0" expanded="false" />
-            <element signature="e#1715#1716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ShowArchetypesDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2464">
           <caret line="128" column="24" lean-forward="false" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,25 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="46" column="15" lean-forward="false" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="111" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="111" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,13 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#779#780#0" expanded="false" />
-            <element signature="e#810#811#0" expanded="false" />
-            <element signature="e#978#979#0" expanded="false" />
-            <element signature="e#1014#1015#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,44 +744,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/model/AboutModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="242">
           <caret line="13" column="120" lean-forward="false" selection-start-line="13" selection-start-column="120" selection-end-line="13" selection-end-column="120" />
-          <folding>
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1216#1217#0" expanded="true" />
-            <element signature="e#1251#1252#0" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="102" column="12" lean-forward="false" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +764,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigAboutInfoDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
+        <state relative-caret-position="1232">
           <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding />
         </state>
@@ -859,38 +788,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5117">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3791#3792#0" expanded="true" />
-            <element signature="e#3860#3861#0" expanded="true" />
-            <element signature="e#4425#4426#0" expanded="true" />
-            <element signature="e#4497#4498#0" expanded="true" />
-            <element signature="e#8015#8016#0" expanded="true" />
-            <element signature="e#8085#8086#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="110">
+            <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/XmlUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="3476">
+          <caret line="174" column="11" lean-forward="false" selection-start-line="174" selection-start-column="11" selection-end-line="174" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="110">
-            <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GitUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="46" column="15" lean-forward="false" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+          <folding>
+            <element signature="e#1471#1519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/GradleUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="139" column="9" lean-forward="false" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
+          <folding>
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="56" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/model/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/utils/ValidateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/dialog/ConfigProjectDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dragonforest/plugin/archetype/NewArchetypeProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="233" column="28" lean-forward="false" selection-start-line="233" selection-start-column="28" selection-end-line="233" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3667#3668#0" expanded="true" />
+            <element signature="e#3736#3737#0" expanded="true" />
+            <element signature="e#4301#4302#0" expanded="true" />
+            <element signature="e#4373#4374#0" expanded="true" />
+            <element signature="e#7908#7909#0" expanded="true" />
+            <element signature="e#7978#7979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/updatePlugins.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

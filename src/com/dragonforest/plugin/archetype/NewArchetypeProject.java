@@ -8,10 +8,8 @@ import com.dragonforest.plugin.archetype.listener.OnConfigProjectListener;
 import com.dragonforest.plugin.archetype.listener.OnFinishProjectPathListener;
 import com.dragonforest.plugin.archetype.model.AboutModel;
 import com.dragonforest.plugin.archetype.model.AppModel;
-import com.dragonforest.plugin.archetype.utils.FileUtil;
-import com.dragonforest.plugin.archetype.utils.GitUtil;
-import com.dragonforest.plugin.archetype.utils.MessageUtil;
-import com.dragonforest.plugin.archetype.utils.XmlUtil;
+import com.dragonforest.plugin.archetype.model.Result;
+import com.dragonforest.plugin.archetype.utils.*;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
@@ -161,10 +159,10 @@ public class NewArchetypeProject extends AnAction {
                     public void onCloneSuccess() {
                         LoadingDialog.loading("modifying...");
                         // 2.修改包名，applicationid,appName 等
-                        boolean isModified = modifyAppInfo();
-                        if (!isModified) {
+                        Result modifyResult = modifyAppInfo();
+                        if (!modifyResult.isOk()) {
                             LoadingDialog.cancel();
-                            MessageUtil.showMessage("警告", "修改app信息失败！！！", Messages.getErrorIcon());
+                            MessageUtil.showMessage("警告", modifyResult.getMsg(), Messages.getErrorIcon());
                             return;
                         }
                         LoadingDialog.cancel();
@@ -221,9 +219,9 @@ public class NewArchetypeProject extends AnAction {
     /**
      * 修改包名，applicationid,appName 等
      */
-    private boolean modifyAppInfo() {
-
-        // 1.从AndroidManifest文件中读取原有包名
+    private Result modifyAppInfo() {
+        Result result=new Result();
+        // 从AndroidManifest文件中读取原有包名
         String manifestPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "app"
@@ -236,12 +234,13 @@ public class NewArchetypeProject extends AnAction {
         XmlUtil manifestXmlUtil = new XmlUtil(manifestPath);
         String packageNameOld = manifestXmlUtil.readPackageNameFromManifest();
         if (packageNameOld == null) {
-            MessageUtil.showMessage("警告", "获取的包名为空!,请检查项目中Manifest文件是否存在和格式是否正确！！！！", Messages.getErrorIcon());
-            return false;
+            result.setMsg("获取的包名为空!,请检查项目中Manifest文件是否存在和格式是否正确！！！！");
+            result.setOk(false);
+            return result;
         }
         MessageUtil.debugMessage("获取包名完成", "获取的原有包名为：" + packageNameOld, Messages.getInformationIcon());
 
-        // 2.创建新的包名临时目录（必须是临时目录，避免包名路径可能和原有包名路径重合），并将原包名下的文件拷贝过去
+        // 创建新的包名临时目录（必须是临时目录，避免包名路径可能和原有包名路径重合），并将原包名下的文件拷贝过去
         String mainPackageDir = localProjectPath
                 + File.separator
                 + "app"
@@ -263,12 +262,13 @@ public class NewArchetypeProject extends AnAction {
         MessageUtil.debugMessage("获取包名路径完成", "old包名路径为：" + packagePathOld, Messages.getInformationIcon());
         boolean isPackageDirOldCopyed = FileUtil.copyDir(packagePathOld, tempPackageDir);
         if (!isPackageDirOldCopyed) {
-            MessageUtil.showMessage("拷贝失败：", "拷贝失败", Messages.getInformationIcon());
-            return false;
+            result.setMsg("拷贝包目录失败");
+            result.setOk(false);
+            return result;
         }
         MessageUtil.debugMessage("拷贝成功：", "拷贝成功", Messages.getInformationIcon());
 
-        // 3.遍历新包名下的所有文件，查找替换包名字符串
+        // 遍历新包名下的所有文件，查找替换包名字符串
         Collection<File> javaFiles = FileUtil.listFiles(tempPackageDir, new String[]{"java"}, true);
         Iterator<File> iterator = javaFiles.iterator();
         while (iterator.hasNext()) {
@@ -276,14 +276,15 @@ public class NewArchetypeProject extends AnAction {
             FileUtil.readAndReplace(file.getAbsolutePath(), packageNameOld, appModel.getPackageName());
         }
 
-        // 4.修改AndroidManifest.xml中的包名
-        boolean isManifestModified = manifestXmlUtil.modifyManifestPacakgeName(appModel.getPackageName());
+        // 修改AndroidManifest.xml
+        boolean isManifestModified = manifestXmlUtil.modifyManifest(appModel.getPackageName());
         if (!isManifestModified) {
-            MessageUtil.showMessage("错误", "Manifest.xml修改出错！Manifest.xml是否存在！", Messages.getErrorIcon());
-            return false;
+            result.setMsg("Manifest.xml修改出错！Manifest.xml是否存在！");
+            result.setOk(false);
+            return result;
         }
 
-        // 5.修改strings.xml中的 appNamse
+        // 修改strings.xml
         String StringsXmlPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "app"
@@ -298,33 +299,31 @@ public class NewArchetypeProject extends AnAction {
                 + File.separator
                 + "strings.xml";
         XmlUtil stringsXmlUtil = new XmlUtil(StringsXmlPath);
-        boolean isAppNameModified = stringsXmlUtil.modifyStringsAppName(appModel.getAppName());
-        if (!isAppNameModified) {
-            MessageUtil.showMessage("错误", "appName修改失败！请检查strings.xml中app_name是否配置正常！", Messages.getErrorIcon());
-            return false;
+        boolean isStringsModified = stringsXmlUtil.modifyStrings(appModel.getAppName(),aboutModel);
+        if (!isStringsModified) {
+            result.setMsg("Strings.xml文件修改失败！请检查strings.xml是否配置正常！");
+            result.setOk(false);
+            return result;
         }
 
-        // 6.向string.xml中添加about信息
-        boolean isAboutInfoAdded = stringsXmlUtil.addAboutinfo2Strings(aboutModel);
-        if(!isAboutInfoAdded){
-            MessageUtil.showMessage("错误", "关于信息添加失败！", Messages.getErrorIcon());
-            return false;
-        }
-
-        // 7.修改gradle中的配置的applicationId 认为原有的applicatinoId和包名一致
+        // 修改config.gradle
         String gradleConfigPath = NewArchetypeProject.this.localProjectPath
                 + File.separator
                 + "config.gradle";
-        boolean isApplicationIdModified = FileUtil.readAndReplace(gradleConfigPath, packageNameOld, appModel.getApplicationId());
-        if (!isApplicationIdModified) {
-            MessageUtil.showMessage("错误", "applicationId修改出错！请检查config.gradle是否存在！", Messages.getErrorIcon());
-            return false;
+        GradleUtil gradleUtil=new GradleUtil(gradleConfigPath);
+        boolean isConfigGradleModified = gradleUtil.modifiedGradleConfig(appModel.getApplicationId(),appModel.getAppName(),"MMMMMMMMM");
+        if (!isConfigGradleModified) {
+            result.setMsg("gradle配置修改出错！请检查项目根目录下config.gradle是否存在！");
+            result.setOk(false);
+            return result;
         }
 
-        // 8.删除main/java原有包名目录，并将临时目录中的文件拷贝过去,最后删除临时目录
+        // 删除main/java原有包名目录，并将临时目录中的文件拷贝过去,最后删除临时目录
         boolean isMainPackageDirCleaned = FileUtil.cleanDir(mainPackageDir);
         if (!isMainPackageDirCleaned) {
-            return false;
+            result.setMsg("main/java 目录旧包名结构清理失败！");
+            result.setOk(false);
+            return result;
         }
         String[] splitNewPackageName = appModel.getPackageName().split("\\.");
         String innerPackageDirNew = "";
@@ -334,11 +333,13 @@ public class NewArchetypeProject extends AnAction {
         String packagePathNew = mainPackageDir + File.separator + innerPackageDirNew;
         boolean isTempPackageDirNewCopyed = FileUtil.copyDir(tempPackageDir + File.separator, packagePathNew);
         if (!isTempPackageDirNewCopyed) {
-            return false;
+            result.setMsg("临时目录拷贝失败！");
+            result.setOk(false);
+            return result;
         }
         FileUtil.deleteDir(tempPackageDir);
 
-        // 9.删除test/java 下原有目录，并创建新的包名目录
+        // 删除test/java 下原有目录，并创建新的包名目录
         String testPackageDir = localProjectPath
                 + File.separator
                 + "app"
@@ -350,15 +351,19 @@ public class NewArchetypeProject extends AnAction {
                 + "java"; //包名基本目录
         boolean isTestPackageDirCleaned = FileUtil.cleanDir(testPackageDir);
         if (!isTestPackageDirCleaned) {
-            return false;
+            result.setMsg("test/java 目录旧包名结构清理失败！");
+            result.setOk(false);
+            return result;
         }
         String testPackagePathNew = testPackageDir + File.separator + innerPackageDirNew;
         boolean isMkTestPackage = FileUtil.mkDir(testPackagePathNew);
         if (!isMkTestPackage) {
-            return false;
+            result.setMsg("test/java 目录新包名结构创建失败！");
+            result.setOk(false);
+            return result;
         }
 
-        // 10.删除androidTest/java 下原有目录，并创建新的包名目录
+        // 删除androidTest/java 下原有目录，并创建新的包名目录
         String androidTestPackageDir = localProjectPath
                 + File.separator
                 + "app"
@@ -370,13 +375,19 @@ public class NewArchetypeProject extends AnAction {
                 + "java"; //包名基本目录
         boolean isAndroidTestPackageDirCleaned = FileUtil.cleanDir(androidTestPackageDir);
         if (!isAndroidTestPackageDirCleaned) {
-            return false;
+            result.setMsg("androidTest/java 目录旧包名结构清理失败！");
+            result.setOk(false);
+            return result;
         }
         String androidTestPackagePathNew = androidTestPackageDir + File.separator + innerPackageDirNew;
         boolean isMkAndroidTestPackagePath = FileUtil.mkDir(androidTestPackagePathNew);
         if (!isMkAndroidTestPackagePath) {
-            return false;
+            result.setMsg("androidTest/java 目录新包名结构创建失败！");
+            result.setOk(false);
+            return result;
         }
-        return true;
+        result.setMsg("项目信息修改配置成功！");
+        result.setOk(true);
+        return result;
     }
 }

@@ -53,12 +53,85 @@ public class XmlUtil {
     }
 
     /**
+     * 修改AndroidManifest.xml文件
+     * 修改内容：
+     * 1.包名
+     *
+     * @param packageName
+     * @return
+     */
+    public boolean modifyManifest(String packageName){
+        if (document == null)
+            return false;
+        // 修改packageName
+        Element manifestElement = document.getDocumentElement();
+        manifestElement.setAttribute("package", packageName);
+        //...
+        return saveToXmlFile();
+    }
+
+    /**
+     * 修改Strings.xml 文件
+     * 修改内容：
+     * 1.app名字
+     * 2.关于信息
+     *
+     * @param appName
+     * @param aboutModel
+     * @return
+     */
+    public boolean modifyStrings(String appName,AboutModel aboutModel){
+        if (document == null)
+            return false;
+        // 修改app名字
+        Element resourceElement = document.getDocumentElement();
+        NodeList nodeList = resourceElement.getElementsByTagName("string");
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            Element item = (Element) nodeList.item(i);
+            if (item != null) {
+                if (item.hasAttribute("name")) {
+                    String attrName = item.getAttribute("name");
+                    if ("app_name".equals(attrName)) {
+                        String appName1 = item.getFirstChild().getNodeValue();
+                        item.getFirstChild().setNodeValue(appName);
+                        break;
+                    }
+                }
+            }
+        }
+        // 添加about信息
+        Element companyNameElement=document.createElement("string");
+        companyNameElement.appendChild(document.createTextNode(aboutModel.getCompanyName()));
+        companyNameElement.setAttribute("name","app_build_company_name");
+        resourceElement.appendChild(companyNameElement);
+        Element companyPhoneElement=document.createElement("string");
+        companyPhoneElement.appendChild(document.createTextNode(aboutModel.getCompanyPhone()));
+        companyPhoneElement.setAttribute("name","app_build_company_phone");
+        resourceElement.appendChild(companyPhoneElement);
+        Element companyUrlElement=document.createElement("string");
+        companyUrlElement.appendChild(document.createTextNode(aboutModel.getCompanyUrl()));
+        companyUrlElement.setAttribute("name","app_build_company_url_name");
+        resourceElement.appendChild(companyUrlElement);
+        Element supportElement=document.createElement("string");
+        supportElement.appendChild(document.createTextNode(aboutModel.getSupport()));
+        supportElement.setAttribute("name","app_support_company_name");
+        resourceElement.appendChild(supportElement);
+        Element supportPhoneElement=document.createElement("string");
+        supportPhoneElement.appendChild(document.createTextNode(aboutModel.getSupportPhone()));
+        supportPhoneElement.setAttribute("name","app_support_company_phone");
+        resourceElement.appendChild(supportPhoneElement);
+
+        // 保存信息
+        return saveToXmlFile();
+    }
+
+    /**
      * 修改AndroidMainfest中的包名
      *
      * @param packageName
      * @return
      */
-    public boolean modifyManifestPacakgeName(String packageName) {
+    private boolean modifyManifestPacakgeName(String packageName) {
         if (document == null)
             return false;
         Element manifestElement = document.getDocumentElement();
@@ -72,7 +145,7 @@ public class XmlUtil {
      * @param appName
      * @return
      */
-    public boolean modifyStringsAppName(String appName) {
+    private boolean modifyStringsAppName(String appName) {
         if (document == null)
             return false;
         Element resourceElement = document.getDocumentElement();
@@ -85,6 +158,7 @@ public class XmlUtil {
                     if ("app_name".equals(attrName)) {
                         String appName1 = item.getFirstChild().getNodeValue();
                         item.getFirstChild().setNodeValue(appName);
+                        break;
                     }
                 }
             }
@@ -98,7 +172,7 @@ public class XmlUtil {
      * @param aboutModel
      * @return
      */
-    public boolean addAboutinfo2Strings(AboutModel aboutModel){
+    private boolean addAboutinfo2Strings(AboutModel aboutModel){
         if (document == null)
             return false;
         Element resourceElement = document.getDocumentElement();

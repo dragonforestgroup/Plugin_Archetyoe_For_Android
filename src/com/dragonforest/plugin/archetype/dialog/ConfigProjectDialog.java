@@ -2,6 +2,7 @@ package com.dragonforest.plugin.archetype.dialog;
 
 import com.dragonforest.plugin.archetype.listener.OnConfigProjectListener;
 import com.dragonforest.plugin.archetype.model.AppModel;
+import com.dragonforest.plugin.archetype.model.Result;
 import com.dragonforest.plugin.archetype.utils.ValidateUtil;
 import com.intellij.openapi.ui.Messages;
 
@@ -77,7 +78,7 @@ public class ConfigProjectDialog extends JDialog {
             Messages.showMessageDialog("输入项不能为空！", "警告", Messages.getInformationIcon());
             return;
         }
-        ValidateUtil.Result result = ValidateUtil.validePackageName(packageName);
+        Result result = ValidateUtil.validePackageName(packageName);
         if(!result.isOk()){
             Messages.showMessageDialog("包名验证失败！"+result.getMsg(), "警告", Messages.getInformationIcon());
             return;

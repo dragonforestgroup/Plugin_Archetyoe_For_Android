@@ -1,5 +1,7 @@
 package com.dragonforest.plugin.archetype.utils;
 
+import com.dragonforest.plugin.archetype.model.Result;
+
 public class ValidateUtil {
     public static Result validePackageName(String packageName) {
         Result result = new Result();
@@ -30,26 +32,5 @@ public class ValidateUtil {
             return result;
         }
         return result;
-    }
-
-    public static class Result {
-        boolean isOk = true;
-        String msg = "validate pass";
-
-        public boolean isOk() {
-            return isOk;
-        }
-
-        public void setOk(boolean ok) {
-            isOk = ok;
-        }
-
-        public String getMsg() {
-            return msg;
-        }
-
-        public void setMsg(String msg) {
-            this.msg = msg;
-        }
     }
 }
